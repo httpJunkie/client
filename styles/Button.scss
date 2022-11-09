@@ -1,0 +1,48 @@
+button.mm-button {
+  display: block;
+  border-radius: auto;
+  padding: 1px;
+  height: 24px;
+  margin: 0;
+  border: none;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  > .text {
+    margin-top: 4px;
+    margin-left: 5px;
+    margin-right: 7px;
+  }
+  > svg {
+    margin: 2px 0 0 2px;
+  }
+}
+
+/** Rounded button **/
+button.mm-button.btn-rounded {
+  border-radius: 0.1rem;
+}
+
+/** Top margin **/
+button.mm-button.btn-marginTop {
+  margin-top: 0.5rem;
+}
+button.mm-button.btn-bottomTop {
+  margin-bottom: 0.5rem;
+}
+
+/* Light Theme */
+.app-container.light {
+  button.mm-button {
+    background-color: #333;
+    color: #FFF;
+  }
+}
+
+/* Dark Theme */
+.app-container.dark {
+  button.mm-button {
+    background-color: #FFF;
+    color: #333;
+  }
+}
